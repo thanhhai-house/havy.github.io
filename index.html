@@ -1,10 +1,62 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="vi">
 <head>
-  <title>Xin chào!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio của Bạn</title>
+  <style>
+    :root { --w: 920px; }
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+    header{padding:56px 20px;background:#111;color:#fff}
+    header .wrap{max-width:var(--w);margin:auto;display:flex;gap:24px;align-items:center}
+    header img{width:96px;height:96px;border-radius:50%;object-fit:cover;border:2px solid #fff1}
+    h1{margin:0 0 6px;font-size:32px}
+    p{margin:0;opacity:.9}
+    main{max-width:var(--w);margin:32px auto;padding:0 20px}
+    .card{border:1px solid #0001;border-radius:16px;padding:20px;margin:16px 0;box-shadow:0 4px 14px #00000010}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    footer{max-width:var(--w);margin:40px auto 80px;padding:0 20px;color:#555}
+    a.button{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid #0002;text-decoration:none}
+    a:hover{background:#0001}
+  </style>
 </head>
 <body>
-  <h1>Chào mừng bạn đến website đầu tiên!</h1>
-  <p>Anh yêu bé nhất trên đời ;)❤️❤️❤️🤣</p>
+  <header>
+    <div class="wrap">
+      <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="avatar">
+      <div>
+        <h1>Xin chào, mình là thanh hải</h1>
+        <p>mình yêu vy lắm✨</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Giới thiệu</h2>
+      <p>Một đoạn mô tả ngắn về bạn, công việc, kỹ năng…</p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Dự án A</h3>
+        <p>Mô tả ngắn gọn dự án của bạn.</p>
+        <a class="button" href="#">Xem chi tiết</a>
+      </div>
+      <div class="card">
+        <h3>Dự án B</h3>
+        <p>Một dự án khác bạn thấy tự hào.</p>
+        <a class="button" href="#">Xem chi tiết</a>
+      </div>
+      <div class="card">
+        <h3>Liên hệ</h3>
+        <p>Email: you@example.com</p>
+        <a class="button" href="mailto:you@example.com">Gửi email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="y"></span> Tên của bạn</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
